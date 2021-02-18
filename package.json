@@ -7,8 +7,6 @@
     "i-util": "npm i -g @crestron/ch5-utilities-cli",
     "i-crcomlib": "npm i -g @crestron/ch5-crcomlib",
     "i-themes": "npm i @crestron/ch5-theme",
-    "build": "ch5-cli archive -p ch5Huddle -d C:\\CodeStoreZBJ\\Development\\CH5\\Huddle_Room_UI\\src\\ -o dist",
-    "load": "ch5-cli deploy -H 192.168.1.220 -t touchscreen dist\\ch5Huddle.ch5z"
   },
   "author": "",
   "license": "ISC",
