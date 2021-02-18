@@ -1,0 +1,26 @@
+{
+  "name": "huddle_room_ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "i-util": "npm i -g @crestron/ch5-utilities-cli",
+    "i-crcomlib": "npm i -g @crestron/ch5-crcomlib",
+    "i-themes": "npm i @crestron/ch5-theme",
+    "build": "ch5-cli archive -p ch5Huddle -d C:\\CodeStoreZBJ\\Development\\CH5\\Huddle_Room_UI\\src\\ -o dist",
+    "load": "ch5-cli deploy -H 192.168.1.220 -t touchscreen dist\\ch5Huddle.ch5z"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-icons": "^1.3.0",
+    "gulp": "^4.0.2",
+    "@crestron/ch5-crcomlib": "^1.0.0",
+    "@crestron/ch5-theme": "^1.0.0",
+    "install": "^0.13.0",
+    "npm": "^6.14.5"
+  },
+  "devDependencies": {
+    "gulp-ssh": "^0.7.0"
+  }
+}

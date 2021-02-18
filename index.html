@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CH5 Huddle Room UI</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    
+    <nav id="header" class="nav">
+        <ul class="nav-list">
+
+            <li><button id ="power-btn" class="btn">
+                <svg class="bi" width="32" height="32" fill="currentColor">
+                    <use xlink:href="src/assets/bootstrap-icons.svg#power"/>
+                </svg>
+            </button></li>
+
+        </ul>
+
+        <div id="date-time"></div>
+    </nav>
+
+    <div class="container">
+        <div id="home-page">
+            <h1>Select a Source to Present</h1>
+
+            <div id="src-container">
+
+                <button id="source-01-select-btn" class="src-btn src-btn-selected">
+                    <svg class="bi" width="48" height="48" fill="currentColor">
+                        <use xlink:href="src/assets/bootstrap-icons.svg#laptop"/>
+                    </svg>
+                    <h4>Wall Laptop Input</h4>
+                </button>
+    
+                <button id="source-02-select-btn" class="src-btn">
+                    <svg class="bi" width="48" height="48" fill="currentColor">
+                        <use xlink:href="src/assets/bootstrap-icons.svg#laptop"/>
+                    </svg>
+                    <h4>Table Laptop Input</h4>
+                </button>
+    
+                <button id="source-03-select-btn" class="src-btn">
+                    <svg class="bi" width="48" height="48" fill="currentColor">
+                        <use xlink:href="src/assets/bootstrap-icons.svg#wifi"/>
+                    </svg>
+                    <h4>Solstice Pod</h4>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div id="power-popup" class="modal">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <span class="close">
+                        <button id="power-close-btn" class="btn close-btn">
+                            <svg class="bi" width="48" height="48" fill="currentColor">
+                                <use xlink:href="src/assets/bootstrap-icons.svg#x-circle-fill"/>
+                            </svg>
+                        </button>
+                    </span>
+                    <h1>Shutdown System?</h1>
+
+                </div>
+
+                <div class="modal-body">
+                    <button id="shutdown-confirm-btn" class="btn">
+                        <h1>Yes</h1>
+                    </button>
+                    <button id="shutdown-cancel-btn" class="btn">
+                        <h1>No</h1>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div id="settings-page">
+            <h1>Settings</h1>
+        </div>
+
+
+        <div id="help-popup" class="modal">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <span class="close">
+                        <button id="help-close-btn" class="btn close-btn">
+                            <svg class="bi" width="48" height="48" fill="currentColor">
+                                <use xlink:href="src/assets/bootstrap-icons.svg#x-circle-fill"/>
+                            </svg>
+                        </button>
+                    </span>    
+                    <h1>Help</h1>
+                </div>
+
+                <div class="modal-body">
+                    <p>For Technical Assistance, call 555-555-5555</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" class="nav">
+        <ul class="nav-list">
+
+            <li><button id ="home-btn" class="btn">
+                <svg class="bi" width="32" height="32" fill="currentColor">
+                    <use xlink:href="src/assets/bootstrap-icons.svg#house-door"/>
+                </svg>
+            </button></li>
+
+            <li><button id ="settings-btn" class="btn">
+                <svg class="bi" width="32" height="32" fill="currentColor">
+                    <use xlink:href="src/assets/bootstrap-icons.svg#gear"/>
+                </svg>
+            </button></li>
+
+            <li><button id ="help-btn" class="btn">
+                <svg class="bi" width="32" height="32" fill="currentColor">
+                    <use xlink:href="src/assets/bootstrap-icons.svg#question-circle"/>
+                </svg>
+            </button></li>
+
+        </ul>
+
+    </footer>
+
+    <script src="src/js/cr-com-lib.js"></script>
+    <script src="src/js/app.js"></script>
+</body>
+</html>
