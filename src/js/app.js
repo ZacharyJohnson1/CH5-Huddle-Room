@@ -134,6 +134,10 @@ const sourceSelection = () => {
     }
 }
 
+const displayPower = () => {
+
+}
+
 const dateTimeText = document.getElementById('date-time');
 const setDateTime = () => {
 
@@ -153,3 +157,4 @@ setDateTime();
 window.setInterval(setDateTime, 60000);
 navigation();
 sourceSelection();
+displayPower();
